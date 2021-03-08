@@ -106,6 +106,11 @@ func (c *ConditionList) AndBETWEEN(key string, from, to interface{}) {
 	c.setCondition(conditionBETWEEN, key, from, to)
 }
 
+// AndBeginsWith adds BETWEEN condition.
+func (c *ConditionList) AndBeginsWith(key string, val interface{}) {
+	c.setCondition(conditionBeginsWith, key, val)
+}
+
 func (c *ConditionList) setCondition(condition, key string, val interface{}, subVal ...interface{}) {
 	if _, ok := c.conditions[key]; ok {
 		return

@@ -27,6 +27,7 @@ const (
 	conditionBETWEEN = SDK.ComparisonOperatorBetween
 	conditionOR      = SDK.ConditionalOperatorOr
 	conditionAND     = SDK.ConditionalOperatorAnd
+	conditionBeginsWith = SDK.ComparisonOperatorBeginsWith
 
 	// comparison operators
 	ComparisonOperatorEQ = SDK.ComparisonOperatorEq
